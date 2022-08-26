@@ -28,7 +28,13 @@ const { Queue, LinkedList, BinarySearchTree } = require('./DataStructures.js');
 // search(value) ---> Devuelve la posicion del nodo con el valor recibido por parametro, contando desde 0.
 // myLinkedList.search(16) ---> devuelve 2.
 
-LinkedList.prototype.getHead = function () {};
+LinkedList.prototype.getHead = function () {
+    if (this.head) {
+        return this.head.value
+    } else {
+        return undefined;
+    }
+};
 
 LinkedList.prototype.getTail = function () {};
 
